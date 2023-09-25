@@ -1,0 +1,20 @@
+---
+- hosts: db
+  gather_facts: false
+#  ignore_errors: true
+  tasks:
+      - name: check the date
+        command: datejfkdf
+        ignore_errors: yes
+      - name: check the uptime
+        command: uptime
+      - name: check the lsblk
+        command: |
+           uptime
+           date
+           nproc   
+
+
+          
+    
+   
